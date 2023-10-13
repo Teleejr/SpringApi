@@ -9,7 +9,6 @@ import java.util.Optional;
 
 @Service
 public class UserService {
-
     private List<User> userList;
 
     public UserService() {
@@ -33,6 +32,10 @@ public class UserService {
             }
         }
         return optional;
+    }
+
+    public List<User> getAllUsers() {
+        return userList;
     }
 
 }
